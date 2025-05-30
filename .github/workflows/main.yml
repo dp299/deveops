@@ -19,4 +19,4 @@ jobs:
           aws-region: us-east-1  # बस एक बार
 
       - name: Deploy to S3
-        run: aws s3 sync . s3://my-bucket-portfolio --delete
+          run: aws s3 sync ./tws-portfolio s3://my-bucket-portfolio --delete
