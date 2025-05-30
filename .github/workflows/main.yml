@@ -3,7 +3,7 @@ name: portfolio deployment
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build-and-deploy:
@@ -19,4 +19,4 @@ jobs:
           aws-region: us-east-1
 
       - name: Deploy to S3
-        run: aws s3 sync ./tws-portfolio s3://my-bucket --delete
+        run: aws s3 sync ./tws-portfolio s3://my-bucket-portfolio --delete
