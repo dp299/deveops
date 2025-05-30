@@ -19,4 +19,4 @@ jobs:
           aws-region: us-east-1
 
       - name: Deploy to S3
-        run: aws s3 sync ./deveops s3://my-bucket-portfolio --delete
+        run: aws s3 sync C:\Users\hp\OneDrive\Desktop\deveops\tws-portfolio s3://my-bucket-portfolio --delete
